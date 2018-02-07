@@ -1,0 +1,116 @@
+.parallax {
+    /* Set a specific height */
+    height: 80vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.parallax_img1{
+  /* The image used */
+  background-image: url("../websiteImages/banner.jpeg");
+}
+
+.parallax_img2{
+  /* The image used */
+  background-image: url("../websiteImages/banner.jpeg");
+}
+
+
+.caption_logo{
+  position: absolute;
+  left: 0;
+  top: 2%;
+  width: 100%;
+  text-align: left;
+  color: #000;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.caption_logo span.border {
+  /*background-color: #111;*/
+  color: #fff;
+  /*padding: 18px;
+  margin: 18px;*/
+  font-size: 25px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+body{
+  background-color: #000000;
+}
+
+#Loader{
+  position: absolute;
+  top:0;
+  left:0;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #000000;
+  z-index: 9999999;
+}
+
+svg {
+  margin: auto;
+}
+
+#lid {
+  animation: blink 2.4s infinite;
+}
+#eye {
+  animation: squeeze 2.4s infinite;
+}
+
+@keyframes blink {
+  90% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(15px) scaleY(0)
+  }
+  100% {
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes squeeze {
+  90% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(3px) scaleY(0.8)
+  }
+  100% {
+    animation-timing-function: ease-out;
+  }
+}
